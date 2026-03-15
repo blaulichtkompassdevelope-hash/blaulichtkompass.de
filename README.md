@@ -1,6 +1,6 @@
-# Asthma Tagebuch Datenschutzerklärung
+# blaulichtkompass.de
 
-Statische Website für die Datenschutzerklärung der App `Asthma Tagebuch`.
+Statische Website für die blaulichtkompass.de
 
 ## Dateien
 

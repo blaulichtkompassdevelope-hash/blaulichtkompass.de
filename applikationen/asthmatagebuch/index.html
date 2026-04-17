@@ -12,6 +12,8 @@
   <style>
     .demo-cta-block {
       margin-top: 24px;
+      display: grid;
+      gap: 12px;
     }
 
     #webapp-launch {
@@ -61,6 +63,32 @@
       font-weight: 600;
       color: rgba(246, 255, 248, 0.88);
     }
+
+    .store-link {
+      display: grid;
+      width: min(420px, 100%);
+      gap: 4px;
+      padding: 18px 20px;
+      border: 1px solid rgba(20, 59, 81, 0.14);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 14px 28px rgba(17, 44, 63, 0.12);
+      color: #16344d;
+      text-align: left;
+      text-decoration: none;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+    }
+
+    .store-link:hover,
+    .store-link:focus-visible {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 18px 34px rgba(17, 44, 63, 0.16);
+    }
+
+    .store-link .demo-launch-meta {
+      color: #4d6475;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +125,15 @@
               <span class="demo-launch-label">Asthmatagebuch Web App testen</span>
               <span class="demo-launch-meta">Im Browser ausprobieren</span>
             </button>
+            <a
+              class="store-link"
+              href="https://play.google.com/store/apps/details?id=de.blaulichtkompass.asthmatagebuch&hl=de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="demo-launch-label">Asthma Tagebuch bei Google Play</span>
+              <span class="demo-launch-meta">Im Play Store öffnen</span>
+            </a>
           </div>
           <p class="updated">
             Übersichtlich, mobil optimiert für ein schnelles Eintragen Ihrer Werte.

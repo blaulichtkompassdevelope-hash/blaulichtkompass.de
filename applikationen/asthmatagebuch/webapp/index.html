@@ -34,7 +34,7 @@
   <style>
     .back-home {
       position: fixed;
-      top: 16px;
+      top: calc(env(safe-area-inset-top, 0px) + 64px);
       left: 16px;
       z-index: 9999;
       display: inline-flex;

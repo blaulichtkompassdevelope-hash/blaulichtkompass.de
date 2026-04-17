@@ -35,6 +35,32 @@ a {
   color: var(--accent);
 }
 
+.back-link-wrap {
+  margin: 10px 0 0;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(26, 57, 84, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  transform: translateX(-1px);
+  background: rgba(255, 255, 255, 0.96);
+}
+
 code {
   padding: 0.15rem 0.4rem;
   border-radius: 6px;

@@ -31,8 +31,29 @@
 
   <title>Asthma Tagebuch</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    .back-home {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      z-index: 9999;
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(26, 57, 84, 0.12);
+      background: rgba(255, 255, 255, 0.76);
+      color: #16344d;
+      font: 600 14px/1 "Segoe UI", Arial, sans-serif;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(17, 44, 63, 0.12);
+      backdrop-filter: blur(8px);
+    }
+  </style>
 </head>
 <body>
+  <a class="back-home" href="/">← Zur Startseite</a>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

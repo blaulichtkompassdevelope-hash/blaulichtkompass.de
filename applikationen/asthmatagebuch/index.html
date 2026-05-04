@@ -16,6 +16,13 @@
       gap: 12px;
     }
 
+    .store-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
     #webapp-launch {
       appearance: none;
       -webkit-appearance: none;
@@ -85,6 +92,11 @@
       width: min(320px, 100%);
       height: auto;
     }
+
+    .store-link.store-link-apple img {
+      height: 95px;
+      width: auto;
+    }
   </style>
 </head>
 <body>
@@ -121,17 +133,30 @@
               <span class="demo-launch-label">Asthmatagebuch Web App testen</span>
               <span class="demo-launch-meta">Im Browser ausprobieren</span>
             </button>
-            <a
-              class="store-link"
-              href="https://play.google.com/store/apps/details?id=de.blaulichtkompass.asthmatagebuch&hl=de"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="../../en_badge_web_generic.png"
-                alt="Jetzt bei Google Play"
+            <div class="store-links">
+              <a
+                class="store-link"
+                href="https://play.google.com/store/apps/details?id=de.blaulichtkompass.asthmatagebuch&hl=de"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-            </a>
+                <img
+                  src="../../en_badge_web_generic.png"
+                  alt="Jetzt bei Google Play"
+                >
+              </a>
+              <a
+                class="store-link store-link-apple"
+                href="https://apps.apple.com/de/app/asthma-protokoll/id6761280404"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="../../applestore.png"
+                  alt="Laden im App Store"
+                >
+              </a>
+            </div>
           </div>
           <p class="updated">
             Übersichtlich, mobil optimiert für ein schnelles Eintragen Ihrer Werte.

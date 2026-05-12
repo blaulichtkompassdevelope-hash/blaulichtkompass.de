@@ -1,7 +1,7 @@
-﻿:root {
+:root {
   color-scheme: light;
-  --bg-top: #d8e8f3;
-  --bg-bottom: #f3f7f9;
+  --bg-top: #9ecca3;
+  --bg-bottom: #81b3d7;
   --panel: rgba(255, 255, 255, 0.88);
   --panel-border: rgba(26, 57, 84, 0.12);
   --headline: #16344d;
@@ -26,9 +26,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Arial Nova", Arial, sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(30, 91, 123, 0.18), transparent 34%),
-    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  background: linear-gradient(135deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
 }
 
 .back-link-wrap {

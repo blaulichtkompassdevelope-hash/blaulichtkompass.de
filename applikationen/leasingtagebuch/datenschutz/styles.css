@@ -67,30 +67,7 @@ body {
 }
 
 .hero {
-  position: relative;
   margin-bottom: 24px;
-}
-
-.hero-title-wrap {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 160px;
-  isolation: isolate;
-}
-
-.hero-logo {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: clamp(140px, 22vw, 240px);
-  max-width: 42vw;
-  transform: translateY(-50%);
-  opacity: 0.16;
-  pointer-events: none;
-  user-select: none;
-  z-index: -1;
 }
 
 .eyebrow {
@@ -181,15 +158,6 @@ li + li {
 @media (max-width: 640px) {
   .page-shell {
     padding: 28px 14px 40px;
-  }
-
-  .hero-title-wrap {
-    min-height: 120px;
-  }
-
-  .hero-logo {
-    width: clamp(120px, 38vw, 180px);
-    opacity: 0.14;
   }
 
   .content-card {

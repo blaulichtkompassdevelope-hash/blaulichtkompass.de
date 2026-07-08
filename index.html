@@ -12,122 +12,146 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="topbar-fixed">
+    <nav class="topbar-fixed-panel" aria-label="Seitennavigation">
+      <a href="#start">Start</a>
+      <a href="#apps">Applikationen</a>
+      <a href="#ueberblick">Überblick</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#rechtliches">Rechtliches</a>
+      <a href="/applikationen/">Applikationen Seite</a>
+      <a href="/applikationen/vorschau">Vorschau</a>
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+    </nav>
+  </header>
+
   <div class="page-shell">
-    <div class="site-layout">
-      <aside class="side-menu content-card">
-        <p class="menu-label">Menü</p>
-        <nav class="side-menu-links" aria-label="Seitennavigation">
-          <a href="/applikationen/">Applikationen</a>
-          <a href="/impressum/">Impressum</a>
-          <a href="/datenschutz/">Datenschutz</a>
-          <a href="https://blaulichtkompass.de/applikationen/vorschau">Vorschau</a>
-          <button class="side-menu-button" type="button" data-open-contact>Kontakt</button>
-        </nav>
-      </aside>
+    <header class="hero" id="start">
+      <p class="eyebrow">Digitale Anwendungen für</p>
+      <h1>Blaulichtkompass</h1>
+      <p class="intro hero-intro">
+        Blaulichtkompass bündelt Anwendungen und Informationen für Menschen, die
+        Orientierung, Dokumentation und digitale Unterstützung brauchen. Mit dem
+        <a href="/applikationen/asthmatagebuch/">Asthmatagebuch</a> lassen sich
+        Beschwerden strukturiert erfassen und der Alltag besser dokumentieren. Die
+        Startseite dient als zentrale Übersicht für aktuelle und kommende Projekte.
+      </p>
+      <p class="updated">Fokus: übersichtlich, vertrauenswürdig und leicht erreichbar.</p>
 
-      <div class="site-content">
-    <header class="hero content-card">
-      <nav class="topbar" aria-label="Hauptnavigation">
-        <a class="brand" href="#start">Blaulichtkompass</a>
-        <div class="nav-links">
-          <a href="#projekte">Projekte</a>
-          <button class="nav-button" type="button" data-open-contact>Kontakt</button>
-          <a href="/impressum">Impressum</a>
-          <a href="/datenschutz">Datenschutz</a>
-        </div>
-      </nav>
-
-      <div class="hero-grid" id="start">
-        <div>
-          <p class="eyebrow">Digitale Anwendungen für</p>
-          <h1>Blaulichtkompass</h1>
-          <p class="intro">
-            Blaulichtkompass bündelt Anwendungen und Informationen für Menschen, die
-            Orientierung, Dokumentation und digitale Unterstützung brauchen. Mit dem
-            <a href="/applikationen/asthmatagebuch/">Asthmatagebuch</a> lassen sich
-            Beschwerden strukturiert erfassen und der Alltag besser dokumentieren. Die
-            Startseite dient als zentrale Übersicht für aktuelle und kommende Projekte.
-          </p>
-          <p class="updated">Fokus: übersichtlich, vertrauenswürdig und leicht erreichbar.</p>
-
-        </div>
-
-        <aside class="hero-panel" aria-label="Projektübersicht">
-          <div class="logo-frame">
-            <img
-              class="hero-logo"
-              src="logo.png"
-              alt="Logo von Blaulichtkompass"
-            >
-          </div>
-          <p class="panel-label">Aktuell im Aufbau</p>
-          <ul class="feature-list">
-            <li>Startseite für alle Blaulichtkompass-Medien</li>
-            <li>Klare Informationen zu Datenschutz und rechtlichen Angaben</li>
-            <li>Modulare Bereiche für kommende App-Projekte</li>
-            <li>App: Asthma Tagebuch</li>
-          </ul>
-        </aside>
-      </div>
-    </header>
-
-    <main class="main-grid">
-      <section class="content-card section-large" id="projekte">
-        <p class="section-tag">Projekte</p>
-        <h2>Digitale Projekte mit Praxisbezug</h2>
-        <p>
-          Hinter Blaulichtkompass steht die Idee, Medien und Anwendungen zu entwickeln, die
-          alltagstauglich, transparent und leicht verständlich sind. Der Schwerpunkt liegt
-          auf digitalen Werkzeugen für den Bereich Rettungsdienst und Notfallmedizin, die
-          Informationen ordnen, Prozesse vereinfachen und Nutzern eine verlässliche
-          Orientierung bieten. Mit dem <a href="/applikationen/asthmatagebuch/">Asthmatagebuch für den Asthma Verlauf</a> lassen sich Symptome tracken und Einträge übersichtlich dokumentieren. Die App Asthma Tagebuch ist als Nebenprodukt anderer Projekte entstanden, die noch im Aufbau sind. Als beginnender Entwickler für Medien, Websites und Smartphoneanwendungen
-          ist mir besonders wichtig, dass ich die Anwendungen selbst nutze, um Bugs und Sinnfehler schnell zu erkennen und stetig zu verbessern. 
-        </p>
-        <p>
+      <section class="apps-strip content-card" id="apps" aria-label="Applikationen">
+        <p class="section-tag">Applikationen</p>
+        <div class="button-row apps-row">
           <a class="button button-primary" href="https://blaulichtkompass.de/applikationen/asthmatagebuch">Asthma Tagebuch</a>
           <a class="button button-primary" href="https://blaulichtkompass.de/applikationen/leasingtagebuch">Leasingtagebuch</a>
-        </p>
-      </section>
-
-      <section class="content-card" id="kontakt">
-        <p class="section-tag">Kontakt</p>
-        <h2>Direkter Weg für Rückfragen und Hinweise</h2>
-        <p>
-          Da ich im Aufbau der Appentwicklung und Erstellung von Medien bin, freue ich mich über Feedback und Hinweise. 
-        </p>
-        <div class="info-block">
-          <p><strong>Hinweis:</strong> Das Kontaktformular öffnet dein E-Mail-Programm mit vorausgefüllter Nachricht.</p>
-          <p><button class="button button-primary" type="button" data-open-contact>Kontaktformular öffnen</button></p>
+          <a class="button button-primary" href="https://blaulichtkompass.de/applikationen/musikwheel/">Blaulichtkompass Musikwheel</a>
         </div>
       </section>
+    </header>
 
-
-      <section class="content-card" id="urheberrecht">
-        <p class="section-tag">Urheberrechtshinweis</p>
-        <h2>Inhalte und Gestaltung</h2>
-        <p>
-          Texte, Gestaltungselemente und bereitgestellte Inhalte dieser Website sind
-          urheberrechtlich geschützt, sofern nicht anders gekennzeichnet. Eine Nutzung,
-          Vervielfältigung oder Weitergabe außerhalb der gesetzlichen Grenzen bedarf
-          der vorherigen Zustimmung.
-        </p>
+    <main class="story-grid">
+      <section class="story-row" id="ueberblick">
+        <article class="media-card content-card">
+          <div class="media-tile">
+            <img src="/assets/Websitelogo_rtw2.png" alt="Rettungswagen als Blaulichtkompass Motiv">
+            <div class="media-reflection" aria-hidden="true">
+              <img src="/assets/Websitelogo_rtw2.png" alt="">
+            </div>
+          </div>
+        </article>
+        <article class="text-card content-card">
+          <div class="text-card-inner">
+            <p class="section-tag">Überblick</p>
+            <h2>Digitale Projekte mit Praxisbezug</h2>
+            <p>
+              Hinter Blaulichtkompass steht die Idee, Medien und Anwendungen zu entwickeln, die
+              alltagstauglich, transparent und leicht verständlich sind. Der Schwerpunkt liegt
+              auf digitalen Werkzeugen für den Bereich Rettungsdienst und Notfallmedizin, die
+              Informationen ordnen, Prozesse vereinfachen und Nutzern eine verlässliche
+              Orientierung bieten.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section class="content-card" id="rechtliches">
-        <p class="section-tag">Rechtliches</p>
-        <h2>Impressum und Datenschutz separat erreichbar</h2>
-        <div class="info-block">
-          <p>
-            <a class="button button-primary" href="/datenschutz">Datenschutz öffnen</a>
-          </p>
-          <p>
-            <a class="button button-primary" href="/impressum">Impressum öffnen</a>
-          </p>
-        </div>
+      <section class="story-row story-row-reverse" id="projekte">
+        <article class="media-card content-card">
+          <div class="media-tile">
+            <img src="/assets/Websitelogo_console.png" alt="Fahrzeugkonsole als Blaulichtkompass Motiv">
+            <div class="media-reflection" aria-hidden="true">
+              <img src="/assets/Websitelogo_console.png" alt="">
+            </div>
+          </div>
+        </article>
+        <article class="text-card content-card">
+          <div class="text-card-inner">
+            <p class="section-tag">Projekte</p>
+            <h2>Aktuelle Anwendungen und neue Einstiege</h2>
+            <p>
+              Mit dem <a href="/applikationen/asthmatagebuch/">Asthmatagebuch für den Asthma Verlauf</a>
+              lassen sich Symptome tracken und Einträge übersichtlich dokumentieren. Die App
+              Asthma Tagebuch ist als Nebenprodukt anderer Projekte entstanden, die noch im Aufbau
+              sind. Als beginnender Entwickler für Medien, Websites und Smartphoneanwendungen ist
+              mir besonders wichtig, dass ich die Anwendungen selbst nutze, um Bugs und Sinnfehler
+              schnell zu erkennen und stetig zu verbessern.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="story-row" id="kontakt">
+        <article class="media-card content-card">
+          <div class="media-tile">
+            <img src="/assets/Websitelogo_haix.png" alt="Ausrüstungsmotiv aus dem Blaulichtkompass Bildkonzept">
+            <div class="media-reflection" aria-hidden="true">
+              <img src="/assets/Websitelogo_haix.png" alt="">
+            </div>
+          </div>
+        </article>
+        <article class="text-card content-card">
+          <div class="text-card-inner">
+            <p class="section-tag">Kontakt</p>
+            <h2>Direkter Weg für Rückfragen und Hinweise</h2>
+            <p>
+              Da ich im Aufbau der Appentwicklung und Erstellung von Medien bin, freue ich mich über
+              Feedback und Hinweise.
+            </p>
+            <div class="info-card">
+              <p><strong>Hinweis:</strong> Das Kontaktformular öffnet dein E-Mail-Programm mit vorausgefüllter Nachricht.</p>
+              <p><button class="button button-primary" type="button" data-open-contact>Kontaktformular öffnen</button></p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="story-row story-row-reverse" id="rechtliches">
+        <article class="media-card content-card">
+          <div class="media-tile">
+            <img src="/assets/Websitelogo_rth.png" alt="Rettungshubschrauber als Blaulichtkompass Motiv">
+            <div class="media-reflection" aria-hidden="true">
+              <img src="/assets/Websitelogo_rth.png" alt="">
+            </div>
+          </div>
+        </article>
+        <article class="text-card content-card">
+          <div class="text-card-inner">
+            <p class="section-tag">Rechtliches</p>
+            <h2>Impressum, Datenschutz und Urheberrecht</h2>
+            <p>
+              Texte, Gestaltungselemente und bereitgestellte Inhalte dieser Website sind
+              urheberrechtlich geschützt, sofern nicht anders gekennzeichnet. Eine Nutzung,
+              Vervielfältigung oder Weitergabe außerhalb der gesetzlichen Grenzen bedarf
+              der vorherigen Zustimmung.
+            </p>
+            <div class="button-row">
+              <a class="button button-secondary" href="/datenschutz/">Datenschutz öffnen</a>
+              <a class="button button-secondary" href="/impressum/">Impressum öffnen</a>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
-      </div>
-    </div>
   </div>
 
   <div class="contact-modal" id="contact-modal" hidden>
@@ -216,7 +240,7 @@
         ].join("\n");
 
         window.location.href =
-          "mailto:kontakt@blaulichtkompass.de?subject=" +
+          "mailto:info@blaulichtkompass.de?subject=" +
           encodeURIComponent(subject) +
           "&body=" +
           encodeURIComponent(body);
@@ -227,4 +251,3 @@
   </script>
 </body>
 </html>
-

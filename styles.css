@@ -51,10 +51,23 @@ button {
   padding: 32px 20px 72px;
 }
 
+.site-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+  gap: 24px;
+  width: min(1400px, 100%);
+  margin: 0 auto;
+}
+
+.site-content,
 .hero,
 .main-grid {
-  width: min(1120px, 100%);
-  margin: 0 auto;
+  min-width: 0;
+}
+
+.hero,
+.main-grid {
+  width: 100%;
 }
 
 .content-card {
@@ -63,6 +76,54 @@ button {
   background: var(--panel);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
+}
+
+.side-menu {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  padding: 22px;
+}
+
+.menu-label {
+  display: inline-block;
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.side-menu-links {
+  display: grid;
+  gap: 12px;
+}
+
+.side-menu-links a,
+.side-menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid rgba(20, 59, 81, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--accent-dark);
+  font-size: 0.96rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease, color 180ms ease;
+}
+
+.side-menu-links a:hover,
+.side-menu-links a:focus-visible,
+.side-menu-button:hover,
+.side-menu-button:focus-visible {
+  background: rgba(226, 241, 247, 0.92);
+  transform: translateY(-1px);
 }
 
 .hero {
@@ -646,10 +707,15 @@ p {
 }
 
 @media (max-width: 900px) {
+  .site-layout,
   .hero-grid,
   .cards,
   .app-hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .side-menu {
+    position: static;
   }
 
   .main-grid > section {

@@ -45,40 +45,10 @@ body {
   margin-bottom: 24px;
 }
 
-.top-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-
-.top-links a,
 .eyebrow a,
 .intro a,
 .content-card a {
   color: var(--accent-strong);
-}
-
-.top-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 0 14px;
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(8px);
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 180ms ease, background-color 180ms ease;
-}
-
-.top-links a:hover,
-.top-links a:focus-visible,
-.back-link:hover,
-.back-link:focus-visible {
-  transform: translateY(-1px);
 }
 
 .eyebrow {

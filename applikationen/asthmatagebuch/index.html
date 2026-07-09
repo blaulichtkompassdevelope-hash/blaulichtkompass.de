@@ -26,15 +26,15 @@
   </header>
 
   <div class="page-shell">
-    <main class="page-flow app-page-flow">
-      <section class="story-row hero-row" id="start">
-        <article class="story-media content-card">
-          <div class="story-media-inner app-media-frame">
+    <main class="story-grid app-story-grid">
+      <section class="story-row" id="start">
+        <article class="media-card content-card app-media-card">
+          <div class="app-visual-card app-visual-icon">
             <img class="app-icon-shot" src="App_symbolbild.jpg" alt="App-Symbol der Asthma Tagebuch App">
           </div>
         </article>
-        <article class="story-copy content-card hero-copy-card">
-          <div class="story-copy-inner app-hero-copy">
+        <article class="text-card content-card app-text-card">
+          <div class="app-text-inner">
             <p class="eyebrow">Applikationen</p>
             <h1>Asthma Tagebuch App</h1>
             <p class="intro">
@@ -50,22 +50,32 @@
               <a class="button button-secondary" href="/">Zur Startseite</a>
             </div>
 
-            <div class="store-badge-row" aria-label="Store-Links">
+            <div class="button-row store-button-row" aria-label="Store-Links">
               <a
-                class="store-badge store-badge-google"
+                class="button button-secondary store-button"
                 href="https://play.google.com/store/apps/details?id=de.blaulichtkompass.asthmatagebuch&hl=de"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../../en_badge_web_generic.png" alt="Bei Google Play herunterladen">
+                <span class="store-button-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path d="M4 3.5v17l9.6-8.5L4 3.5zm10.7 6.1 2.7 2.4-2.7 2.4-2.1-1.9 2.1-2.9zm3.7 3.3 1.6 1.4c.5.4.5 1.2 0 1.6l-8.3 7.4 6.7-10.4zm1.6-3.3-1.6 1.4-6.7-10.4 8.3 7.4c.5.4.5 1.2 0 1.6z"></path>
+                  </svg>
+                </span>
+                <span>Google Play</span>
               </a>
               <a
-                class="store-badge store-badge-apple"
+                class="button button-secondary store-button"
                 href="https://apps.apple.com/de/app/asthma-protokoll/id6761280404"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../../applestore.png" alt="Im App Store herunterladen">
+                <span class="store-button-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path d="M15.4 3.2c-.8 0-1.8.5-2.3 1.1-.5.6-.9 1.5-.8 2.3.9.1 1.8-.4 2.4-1 .5-.6.9-1.5.7-2.4zm3.3 12.4c-.5 1.1-.7 1.6-1.4 2.6-.9 1.3-2.1 2.8-3.6 2.8-1.4 0-1.7-.9-3.6-.9-1.8 0-2.2.9-3.6.9-1.5 0-2.6-1.3-3.6-2.6C.1 15.7 0 11 2.2 7.6 3.8 5.1 6.4 3.7 8.8 3.7c1.5 0 2.4.9 3.6.9 1.2 0 2-.9 3.6-.9 2.1 0 4.4 1.1 6 3.2-1.8 1-2.7 2.7-2.7 4.7 0 2.3 1.3 3.6 2.7 4.2-.4 1.1-.8 1.6-1.3 2.6z"></path>
+                  </svg>
+                </span>
+                <span>App Store</span>
               </a>
             </div>
           </div>
@@ -73,13 +83,14 @@
       </section>
 
       <section class="story-row" id="ueberblick">
-        <article class="story-media content-card">
-          <div class="story-media-inner app-media-frame">
-            <img class="app-shot" src="screenshots/Screenshot_20260311-104759.png" alt="Hinweisansicht der Asthma Tagebuch App">
+        <article class="media-card content-card app-media-card">
+          <div class="app-visual-card">
+            <p class="app-visual-label">Dokumentation</p>
+            <p class="app-visual-copy">Symptome, Peak-Flow und Medikation geordnet festhalten.</p>
           </div>
         </article>
-        <article class="story-copy content-card info-panel">
-          <div class="story-copy-inner">
+        <article class="text-card content-card app-text-card">
+          <div class="app-text-inner">
             <p class="section-tag">Überblick</p>
             <h2>Klare Dokumentation für den Alltag</h2>
             <p>
@@ -87,21 +98,22 @@
               Medikation ohne Cloud-Zwang und ohne Abo nachvollziehbar festzuhalten.
             </p>
             <p>
-              Die Seite übernimmt den ruhigen Stil von Blaulichtkompass und die ruhige Kartenstruktur
-              der Musikwheel-Seite, damit Text und Vorschau gleichmäßig und gut lesbar gegenüberliegen.
+              Die Seite übernimmt den ruhigen Stil von Blaulichtkompass und bleibt bewusst schlicht,
+              damit Text und Kartenaufbau klar und gut lesbar wirken.
             </p>
           </div>
         </article>
       </section>
 
       <section class="story-row story-row-reverse" id="funktionen">
-        <article class="story-media content-card">
-          <div class="story-media-inner app-media-frame">
-            <img class="app-shot" src="screenshots/Screenshot_20260311-104809.png" alt="Startseite der Asthma Tagebuch App">
+        <article class="media-card content-card app-media-card">
+          <div class="app-visual-card">
+            <p class="app-visual-label">Funktionen</p>
+            <p class="app-visual-copy">Tagesdokumentation, PDF-Ausgabe und strukturierte Eingaben.</p>
           </div>
         </article>
-        <article class="story-copy content-card info-panel">
-          <div class="story-copy-inner">
+        <article class="text-card content-card app-text-card">
+          <div class="app-text-inner">
             <p class="section-tag">Funktionen</p>
             <h2>Einträge, Verlauf und Medikation</h2>
             <p>
@@ -117,13 +129,14 @@
       </section>
 
       <section class="story-row" id="verlauf">
-        <article class="story-media content-card">
-          <div class="story-media-inner app-media-frame">
-            <img class="app-shot" src="screenshots/Screenshot_20260311-105854.png" alt="Statistikansicht der Asthma Tagebuch App">
+        <article class="media-card content-card app-media-card">
+          <div class="app-visual-card">
+            <p class="app-visual-label">Verlauf</p>
+            <p class="app-visual-copy">Entwicklungen sichtbar machen, ohne die Oberfläche zu überladen.</p>
           </div>
         </article>
-        <article class="story-copy content-card info-panel">
-          <div class="story-copy-inner">
+        <article class="text-card content-card app-text-card">
+          <div class="app-text-inner">
             <p class="section-tag">Verlauf</p>
             <h2>Werte nachvollziehen statt nur speichern</h2>
             <p>
@@ -138,8 +151,8 @@
         <p class="section-tag">Appvorschau</p>
         <h2>Seitlich scrollbare Screenshots</h2>
         <p class="section-copy">
-          Die Vorschau bleibt mittig angeordnet und lässt sich horizontal durch die wichtigsten
-          Ansichten wischen. Nur dieser Bereich darf bewusst breiter wirken als die einzelnen Karten.
+          Die Screenshots werden ausschließlich hier als Appvorschau verwendet. Der Bereich bleibt mittig
+          angeordnet und lässt sich horizontal durch die wichtigsten Ansichten wischen.
         </p>
 
         <div class="screenshot-strip-wrap">
@@ -197,13 +210,14 @@
       </section>
 
       <section class="story-row story-row-reverse" id="links">
-        <article class="story-media content-card">
-          <div class="story-media-inner app-media-frame">
-            <img class="app-shot" src="screenshots/Screenshot_20260311-105946.png" alt="Dokumente drucken Ansicht der Asthma Tagebuch App">
+        <article class="media-card content-card app-media-card">
+          <div class="app-visual-card">
+            <p class="app-visual-label">Direkte Wege</p>
+            <p class="app-visual-copy">Datenschutz, Impressum und Web-App schnell erreichbar.</p>
           </div>
         </article>
-        <article class="story-copy content-card info-panel">
-          <div class="story-copy-inner">
+        <article class="text-card content-card app-text-card">
+          <div class="app-text-inner">
             <p class="section-tag">Links</p>
             <h2>Direkte Wege</h2>
             <p>

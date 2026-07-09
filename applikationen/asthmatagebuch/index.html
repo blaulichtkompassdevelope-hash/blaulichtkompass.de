@@ -14,59 +14,72 @@
 <body>
   <header class="topbar-fixed">
     <nav class="topbar-fixed-panel" aria-label="Seitennavigation">
-      <a href="#start">Start</a>
+      <a href="/">Zur Startseite</a>
+      <a href="#start">App</a>
       <a href="#ueberblick">Überblick</a>
       <a href="#funktionen">Funktionen</a>
       <a href="#verlauf">Verlauf</a>
       <a href="#screenshots">Vorschau</a>
       <a href="#links">Links</a>
       <a href="/applikationen/asthmatagebuch/datenschutz/">Datenschutz</a>
-      <a href="/">Zur Startseite</a>
     </nav>
   </header>
 
   <div class="page-shell">
-    <header class="hero app-hero" id="start">
-      <div class="app-hero-copy">
-        <p class="eyebrow">Applikationen</p>
-        <h1>Asthma Tagebuch App</h1>
-        <p class="back-link-wrap"><a class="back-link" href="/">← Zur Startseite</a></p>
-        <p class="intro">
-          Die Asthma Tagebuch App dient der persönlichen Dokumentation von Symptomen, Peak-Flow-Werten,
-          Auslösern, Aktivitäten und bereits ärztlich festgelegten Medikamenten. Einträge lassen sich
-          übersichtlich sammeln und als PDF exportieren. Die App dient ausschließlich der Dokumentation
-          und ersetzt keine ärztliche Beratung, Diagnose oder Therapieentscheidung.
-        </p>
-        <div class="button-row app-hero-actions">
-          <button class="button app-button-primary" id="webapp-launch" type="button" data-open-webapp-modal>Asthmatagebuch Web-App testen</button>
-          <a
-            class="button button-secondary"
-            href="https://play.google.com/store/apps/details?id=de.blaulichtkompass.asthmatagebuch&hl=de"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Google Play</a>
-          <a
-            class="button button-secondary"
-            href="https://apps.apple.com/de/app/asthma-protokoll/id6761280404"
-            target="_blank"
-            rel="noopener noreferrer"
-          >App Store</a>
-        </div>
-        <p class="updated">
-          Übersichtlich, mobil optimiert und auf schnelle Eingaben ohne unnötige Ablenkung ausgelegt.
-        </p>
-      </div>
-    </header>
-
-    <main class="story-grid app-story-grid">
-      <section class="story-row" id="ueberblick">
-        <article class="media-card content-card app-media-card">
-          <div class="app-media-frame">
+    <main class="page-flow app-page-flow">
+      <section class="story-row hero-row" id="start">
+        <article class="story-media content-card">
+          <div class="story-media-inner app-media-frame">
             <img class="app-icon-shot" src="App_symbolbild.jpg" alt="App-Symbol der Asthma Tagebuch App">
           </div>
         </article>
-        <article class="text-card content-card app-text-card">
-          <div class="app-text-inner">
+        <article class="story-copy content-card hero-copy-card">
+          <div class="story-copy-inner app-hero-copy">
+            <p class="eyebrow">Applikationen</p>
+            <h1>Asthma Tagebuch App</h1>
+            <p class="intro">
+              Die Asthma Tagebuch App dient der persönlichen Dokumentation von Symptomen, Peak-Flow-Werten,
+              Auslösern, Aktivitäten und bereits ärztlich festgelegten Medikamenten. Einträge lassen sich
+              übersichtlich sammeln und als PDF exportieren. Die App dient ausschließlich der Dokumentation
+              und ersetzt keine ärztliche Beratung, Diagnose oder Therapieentscheidung.
+            </p>
+            <p class="updated">Übersichtlich, mobil optimiert und auf schnelle Eingaben ohne unnötige Ablenkung ausgelegt.</p>
+
+            <div class="button-row app-hero-actions">
+              <button class="button app-button-primary" id="webapp-launch" type="button" data-open-webapp-modal>Asthmatagebuch Web-App testen</button>
+              <a class="button button-secondary" href="/">Zur Startseite</a>
+            </div>
+
+            <div class="store-badge-row" aria-label="Store-Links">
+              <a
+                class="store-badge store-badge-google"
+                href="https://play.google.com/store/apps/details?id=de.blaulichtkompass.asthmatagebuch&hl=de"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="../../en_badge_web_generic.png" alt="Bei Google Play herunterladen">
+              </a>
+              <a
+                class="store-badge store-badge-apple"
+                href="https://apps.apple.com/de/app/asthma-protokoll/id6761280404"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="../../applestore.png" alt="Im App Store herunterladen">
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="story-row" id="ueberblick">
+        <article class="story-media content-card">
+          <div class="story-media-inner app-media-frame">
+            <img class="app-shot" src="screenshots/Screenshot_20260311-104759.png" alt="Hinweisansicht der Asthma Tagebuch App">
+          </div>
+        </article>
+        <article class="story-copy content-card info-panel">
+          <div class="story-copy-inner">
             <p class="section-tag">Überblick</p>
             <h2>Klare Dokumentation für den Alltag</h2>
             <p>
@@ -74,21 +87,21 @@
               Medikation ohne Cloud-Zwang und ohne Abo nachvollziehbar festzuhalten.
             </p>
             <p>
-              Die Seite übernimmt den ruhigen Stil von Blaulichtkompass und zeigt die App in einer
-              sachlichen, gut lesbaren Kartenstruktur.
+              Die Seite übernimmt den ruhigen Stil von Blaulichtkompass und die ruhige Kartenstruktur
+              der Musikwheel-Seite, damit Text und Vorschau gleichmäßig und gut lesbar gegenüberliegen.
             </p>
           </div>
         </article>
       </section>
 
       <section class="story-row story-row-reverse" id="funktionen">
-        <article class="media-card content-card app-media-card">
-          <div class="app-media-frame">
+        <article class="story-media content-card">
+          <div class="story-media-inner app-media-frame">
             <img class="app-shot" src="screenshots/Screenshot_20260311-104809.png" alt="Startseite der Asthma Tagebuch App">
           </div>
         </article>
-        <article class="text-card content-card app-text-card">
-          <div class="app-text-inner">
+        <article class="story-copy content-card info-panel">
+          <div class="story-copy-inner">
             <p class="section-tag">Funktionen</p>
             <h2>Einträge, Verlauf und Medikation</h2>
             <p>
@@ -104,13 +117,13 @@
       </section>
 
       <section class="story-row" id="verlauf">
-        <article class="media-card content-card app-media-card">
-          <div class="app-media-frame">
+        <article class="story-media content-card">
+          <div class="story-media-inner app-media-frame">
             <img class="app-shot" src="screenshots/Screenshot_20260311-105854.png" alt="Statistikansicht der Asthma Tagebuch App">
           </div>
         </article>
-        <article class="text-card content-card app-text-card">
-          <div class="app-text-inner">
+        <article class="story-copy content-card info-panel">
+          <div class="story-copy-inner">
             <p class="section-tag">Verlauf</p>
             <h2>Werte nachvollziehen statt nur speichern</h2>
             <p>
@@ -121,81 +134,83 @@
         </article>
       </section>
 
-      <section class="content-card screenshot-panel" id="screenshots">
-        <div class="screenshot-panel-head">
-          <p class="section-tag">Appvorschau</p>
-          <h2>Seitlich scrollbare Screenshots</h2>
-          <p>
-            Die Vorschau bleibt mittig angeordnet und lässt sich horizontal durch die wichtigsten Ansichten wischen.
-          </p>
-        </div>
+      <section class="showcase content-card app-showcase" id="screenshots">
+        <p class="section-tag">Appvorschau</p>
+        <h2>Seitlich scrollbare Screenshots</h2>
+        <p class="section-copy">
+          Die Vorschau bleibt mittig angeordnet und lässt sich horizontal durch die wichtigsten
+          Ansichten wischen. Nur dieser Bereich darf bewusst breiter wirken als die einzelnen Karten.
+        </p>
 
-        <div class="screenshot-strip" aria-label="Screenshots der Asthma Tagebuch App">
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-104759.png" alt="Hinweis zur Nutzung der Asthma Tagebuch App">
-            <p class="shot-label">Hinweis zur Nutzung</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-104809.png" alt="Startseite der Asthma Tagebuch App">
-            <p class="shot-label">Startseite</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-104907.png" alt="Einstellungen der Asthma Tagebuch App">
-            <p class="shot-label">Einstellungen</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-104930.png" alt="Auto-PDF Funktion der Asthma Tagebuch App">
-            <p class="shot-label">Auto-PDF</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105108.png" alt="Benachrichtigungsdialog der Asthma Tagebuch App">
-            <p class="shot-label">Benachrichtigungen</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105122.png" alt="Auswahl der Dauermedikation in der Asthma Tagebuch App">
-            <p class="shot-label">Dauermedikation</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105138.png" alt="Neuer Eintrag in der Asthma Tagebuch App">
-            <p class="shot-label">Neuer Eintrag</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105147.png" alt="Auswahl der Bedarfsmedikation in der Asthma Tagebuch App">
-            <p class="shot-label">Bedarfsmedikation</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105844.png" alt="Gespeicherter Eintrag in der Asthma Tagebuch App">
-            <p class="shot-label">Eintrag gespeichert</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105854.png" alt="Statistikansicht der Asthma Tagebuch App">
-            <p class="shot-label">Statistik</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105905.png" alt="Peak-Flow Diagramm der Asthma Tagebuch App">
-            <p class="shot-label">Peak-Flow Diagramm</p>
-          </article>
-          <article class="screenshot-card">
-            <img src="screenshots/Screenshot_20260311-105946.png" alt="Dokumente drucken Ansicht der Asthma Tagebuch App">
-            <p class="shot-label">Dokumente drucken</p>
-          </article>
+        <div class="screenshot-strip-wrap">
+          <div class="screenshot-strip" aria-label="Screenshots der Asthma Tagebuch App">
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-104759.png" alt="Hinweis zur Nutzung der Asthma Tagebuch App">
+              <p class="shot-label">Hinweis zur Nutzung</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-104809.png" alt="Startseite der Asthma Tagebuch App">
+              <p class="shot-label">Startseite</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-104907.png" alt="Einstellungen der Asthma Tagebuch App">
+              <p class="shot-label">Einstellungen</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-104930.png" alt="Auto-PDF Funktion der Asthma Tagebuch App">
+              <p class="shot-label">Auto-PDF</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105108.png" alt="Benachrichtigungsdialog der Asthma Tagebuch App">
+              <p class="shot-label">Benachrichtigungen</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105122.png" alt="Auswahl der Dauermedikation in der Asthma Tagebuch App">
+              <p class="shot-label">Dauermedikation</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105138.png" alt="Neuer Eintrag in der Asthma Tagebuch App">
+              <p class="shot-label">Neuer Eintrag</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105147.png" alt="Auswahl der Bedarfsmedikation in der Asthma Tagebuch App">
+              <p class="shot-label">Bedarfsmedikation</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105844.png" alt="Gespeicherter Eintrag in der Asthma Tagebuch App">
+              <p class="shot-label">Eintrag gespeichert</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105854.png" alt="Statistikansicht der Asthma Tagebuch App">
+              <p class="shot-label">Statistik</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105905.png" alt="Peak-Flow Diagramm der Asthma Tagebuch App">
+              <p class="shot-label">Peak-Flow Diagramm</p>
+            </article>
+            <article class="screenshot-card">
+              <img class="phone-shot" src="screenshots/Screenshot_20260311-105946.png" alt="Dokumente drucken Ansicht der Asthma Tagebuch App">
+              <p class="shot-label">Dokumente drucken</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="story-row story-row-reverse" id="links">
-        <article class="media-card content-card app-media-card">
-          <div class="app-media-frame">
+        <article class="story-media content-card">
+          <div class="story-media-inner app-media-frame">
             <img class="app-shot" src="screenshots/Screenshot_20260311-105946.png" alt="Dokumente drucken Ansicht der Asthma Tagebuch App">
           </div>
         </article>
-        <article class="content-card app-link-card">
-          <div class="app-text-inner">
+        <article class="story-copy content-card info-panel">
+          <div class="story-copy-inner">
             <p class="section-tag">Links</p>
             <h2>Direkte Wege</h2>
             <p>
-              Datenschutz, Impressum und die Web-App sind direkt erreichbar und in der gleichen Kartenlogik eingebunden.
+              Datenschutz, Impressum und die Web-App sind direkt erreichbar und bleiben in einer
+              proportionalen Karte innerhalb der normalen Seitenbreite.
             </p>
-            <div class="app-link-stack">
+            <div class="button-row app-link-actions">
               <a class="button button-secondary" href="/applikationen/asthmatagebuch/datenschutz/">Datenschutz der App öffnen</a>
               <a class="button button-secondary" href="/impressum/">Impressum öffnen</a>
               <a class="button app-button-primary" href="/applikationen/asthmatagebuch/webapp/">Web-App direkt öffnen</a>

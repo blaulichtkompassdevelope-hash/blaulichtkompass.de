@@ -217,6 +217,7 @@ p {
 .cta-row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 14px;
   margin-top: 24px;
 }
@@ -237,6 +238,12 @@ p {
   display: block;
   width: min(220px, 100%);
   height: auto;
+}
+
+/* The Google asset includes transparent padding; this width keeps both
+   badges' visible black areas the same size. */
+.store-link-apple img {
+  width: min(192px, 100%);
 }
 
 .hero-panel {

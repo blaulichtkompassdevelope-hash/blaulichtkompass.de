@@ -439,6 +439,7 @@ p {
     max-width: 100%;
     font-size: clamp(1.75rem, 9vw, 3rem);
     line-height: 1;
+    overflow-wrap: anywhere;
   }
 
   .hero,

@@ -1,0 +1,55 @@
+name: Tagespfad einmalig veröffentlichen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/deploy_tagespfad.yml
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Website auschecken
+        uses: actions/checkout@v4
+
+      - name: Verschlüsseltes Paket laden
+        env:
+          PACKAGE_URL: 'https://sdmntpritalynorth.oaiusercontent.com/files/00000000-2ec4-8246-993b-c4fa2715e68a/raw?se=2026-09-17T20%3A41%3A32Z&sp=r&sv=2026-02-06&sr=b&scid=01a0b115-8f0f-7e06-894d-321c477ec39f&skoid=ba81670d-b682-4d2d-9682-ac0ffdfb3fa1&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-17T18%3A12%3A12Z&ske=2026-09-18T18%3A12%3A12Z&sks=b&skv=2026-02-06&sig=2A/4QkWQSWp0CmA6IlwFEYG%2BL08ynaxhmuqtnfKEsbs%3D'
+        run: |
+          curl --fail --location --silent --show-error "$PACKAGE_URL" --output /tmp/tagespfad-protected.zip
+          echo "6c4f89604edae9f1c34bb5b65ed9a3e399726bda2f4c749c5c520727df3f3612  /tmp/tagespfad-protected.zip" | sha256sum --check
+          mkdir /tmp/tagespfad-protected
+          unzip -q /tmp/tagespfad-protected.zip -d /tmp/tagespfad-protected
+
+      - name: Paket prüfen
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('/tmp/tagespfad-protected')
+          manifest = json.loads((root / 'manifest.json').read_text())
+          expected = {entry['file'] for entry in manifest['files'].values()}
+          actual = {path.name for path in root.glob('*.bin')}
+
+          if len(manifest['files']) != 47:
+              raise SystemExit(f"Unerwartete Manifestgröße: {len(manifest['files'])}")
+          if expected != actual:
+              raise SystemExit('Manifest und verschlüsselte Dateien stimmen nicht überein')
+          print(f"Geprüft: {len(actual)} verschlüsselte Dateien")
+          PY
+
+      - name: Geschützte App ersetzen
+        run: |
+          rm -rf applikationen/tagespfad/protected
+          mv /tmp/tagespfad-protected applikationen/tagespfad/protected
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add applikationen/tagespfad/protected
+          git commit -m "Deploy updated Tagespfad web app"
+          git push
